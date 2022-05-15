@@ -11,7 +11,7 @@ import SwiftUI
 struct ComposableMapboxApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           MapboxMapView()
         }
     }
 }

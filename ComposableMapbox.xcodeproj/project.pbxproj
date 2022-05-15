@@ -17,6 +17,9 @@
 		A413B252283080E6006A5E14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A413B228283080E4006A5E14 /* ContentView.swift */; };
 		A413B253283080E6006A5E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A413B229283080E6006A5E14 /* Assets.xcassets */; };
 		A413B254283080E6006A5E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A413B229283080E6006A5E14 /* Assets.xcassets */; };
+		A4BBE85228319B2300607240 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = A4BBE85128319B2300607240 /* MapboxMaps */; };
+		A4BBE85428319B6400607240 /* MapboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE85328319B6300607240 /* MapboxMapView.swift */; };
+		A4BBE85528319B6400607240 /* MapboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE85328319B6300607240 /* MapboxMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 		A413B24B283080E6006A5E14 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A413B24D283080E6006A5E14 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		A4BBE84F28319A6D00607240 /* ComposableMapbox--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ComposableMapbox--iOS--Info.plist"; sourceTree = "<group>"; };
+		A4BBE85328319B6300607240 /* MapboxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BBE85228319B2300607240 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,7 @@
 				A413B227283080E4006A5E14 /* ComposableMapboxApp.swift */,
 				A413B228283080E4006A5E14 /* ContentView.swift */,
 				A413B229283080E6006A5E14 /* Assets.xcassets */,
+				A4BBE85328319B6300607240 /* MapboxMapView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -159,6 +165,9 @@
 			dependencies = (
 			);
 			name = "ComposableMapbox (iOS)";
+			packageProductDependencies = (
+				A4BBE85128319B2300607240 /* MapboxMaps */,
+			);
 			productName = "ComposableMapbox (iOS)";
 			productReference = A413B22E283080E6006A5E14 /* ComposableMapbox.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +260,9 @@
 				Base,
 			);
 			mainGroup = A413B221283080E4006A5E14;
+			packageReferences = (
+				A4BBE85028319B2300607240 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = A413B22F283080E6006A5E14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A413B251283080E6006A5E14 /* ContentView.swift in Sources */,
+				A4BBE85428319B6400607240 /* MapboxMapView.swift in Sources */,
 				A413B24F283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A413B252283080E6006A5E14 /* ContentView.swift in Sources */,
+				A4BBE85528319B6400607240 /* MapboxMapView.swift in Sources */,
 				A413B250283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +479,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52AM7VVU3G;
+				DEVELOPMENT_TEAM = VTJ472U225;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ComposableMapbox--iOS--Info.plist";
@@ -496,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52AM7VVU3G;
+				DEVELOPMENT_TEAM = VTJ472U225;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ComposableMapbox--iOS--Info.plist";
@@ -705,6 +719,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4BBE85028319B2300607240 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4BBE85128319B2300607240 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BBE85028319B2300607240 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A413B222283080E4006A5E14 /* Project object */;
 }
