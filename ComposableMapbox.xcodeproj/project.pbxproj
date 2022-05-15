@@ -18,6 +18,13 @@
 		A4BBE85228319B2300607240 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = A4BBE85128319B2300607240 /* MapboxMaps */; };
 		A4BBE85428319B6400607240 /* MapboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE85328319B6300607240 /* MapboxMapView.swift */; };
 		A4BBE85528319B6400607240 /* MapboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE85328319B6300607240 /* MapboxMapView.swift */; };
+		A4BBE8582831A0CF00607240 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE8572831A0CF00607240 /* RootFeature.swift */; };
+		A4BBE8592831A0CF00607240 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE8572831A0CF00607240 /* RootFeature.swift */; };
+		A4BBE85C2831A14E00607240 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A4BBE85B2831A14E00607240 /* ComposableArchitecture */; };
+		A4BBE85E2831A1DF00607240 /* SystemEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE85D2831A1DF00607240 /* SystemEnvironment.swift */; };
+		A4BBE85F2831A1DF00607240 /* SystemEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE85D2831A1DF00607240 /* SystemEnvironment.swift */; };
+		A4BBE8632831A25C00607240 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE8622831A25C00607240 /* RootView.swift */; };
+		A4BBE8642831A25C00607240 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBE8622831A25C00607240 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,9 @@
 		A413B24D283080E6006A5E14 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		A4BBE84F28319A6D00607240 /* ComposableMapbox--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ComposableMapbox--iOS--Info.plist"; sourceTree = "<group>"; };
 		A4BBE85328319B6300607240 /* MapboxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxMapView.swift; sourceTree = "<group>"; };
+		A4BBE8572831A0CF00607240 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
+		A4BBE85D2831A1DF00607240 /* SystemEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnvironment.swift; sourceTree = "<group>"; };
+		A4BBE8622831A25C00607240 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BBE85C2831A14E00607240 /* ComposableArchitecture in Frameworks */,
 				A4BBE85228319B2300607240 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A4BBE84F28319A6D00607240 /* ComposableMapbox--iOS--Info.plist */,
+				A4BBE8602831A22300607240 /* iOS */,
 				A413B226283080E4006A5E14 /* Shared */,
 				A413B235283080E6006A5E14 /* macOS */,
 				A413B23E283080E6006A5E14 /* Tests iOS */,
@@ -103,7 +115,7 @@
 			children = (
 				A413B227283080E4006A5E14 /* ComposableMapboxApp.swift */,
 				A413B229283080E6006A5E14 /* Assets.xcassets */,
-				A4BBE85328319B6300607240 /* MapboxMapView.swift */,
+				A4BBE85D2831A1DF00607240 /* SystemEnvironment.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -145,6 +157,32 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		A4BBE8562831A08D00607240 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A4BBE8572831A0CF00607240 /* RootFeature.swift */,
+				A4BBE8622831A25C00607240 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A4BBE8602831A22300607240 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A4BBE8612831A23200607240 /* Map */,
+				A4BBE8562831A08D00607240 /* Root */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A4BBE8612831A23200607240 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A4BBE85328319B6300607240 /* MapboxMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +201,7 @@
 			name = "ComposableMapbox (iOS)";
 			packageProductDependencies = (
 				A4BBE85128319B2300607240 /* MapboxMaps */,
+				A4BBE85B2831A14E00607240 /* ComposableArchitecture */,
 			);
 			productName = "ComposableMapbox (iOS)";
 			productReference = A413B22E283080E6006A5E14 /* ComposableMapbox.app */;
@@ -258,6 +297,7 @@
 			mainGroup = A413B221283080E4006A5E14;
 			packageReferences = (
 				A4BBE85028319B2300607240 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				A4BBE85A2831A14E00607240 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = A413B22F283080E6006A5E14 /* Products */;
 			projectDirPath = "";
@@ -309,8 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BBE85E2831A1DF00607240 /* SystemEnvironment.swift in Sources */,
 				A4BBE85428319B6400607240 /* MapboxMapView.swift in Sources */,
+				A4BBE8582831A0CF00607240 /* RootFeature.swift in Sources */,
 				A413B24F283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */,
+				A4BBE8632831A25C00607240 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BBE85F2831A1DF00607240 /* SystemEnvironment.swift in Sources */,
 				A4BBE85528319B6400607240 /* MapboxMapView.swift in Sources */,
+				A4BBE8592831A0CF00607240 /* RootFeature.swift in Sources */,
 				A413B250283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */,
+				A4BBE8642831A25C00607240 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +769,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		A4BBE85A2831A14E00607240 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -730,6 +784,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A4BBE85028319B2300607240 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
 			productName = MapboxMaps;
+		};
+		A4BBE85B2831A14E00607240 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4BBE85A2831A14E00607240 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct ComposableMapboxApp: App {
     var body: some Scene {
         WindowGroup {
-           MapboxMapView()
+            RootView(store: Store(initialState: RootState(),
+                                  reducer: rootReducer,
+                                  environment: .live(environment: RootEnvironment())))
         }
     }
 }
