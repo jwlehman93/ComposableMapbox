@@ -13,8 +13,6 @@
 		A413B24E283080E6006A5E14 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A413B24D283080E6006A5E14 /* Tests_macOSLaunchTests.swift */; };
 		A413B24F283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A413B227283080E4006A5E14 /* ComposableMapboxApp.swift */; };
 		A413B250283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A413B227283080E4006A5E14 /* ComposableMapboxApp.swift */; };
-		A413B251283080E6006A5E14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A413B228283080E4006A5E14 /* ContentView.swift */; };
-		A413B252283080E6006A5E14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A413B228283080E4006A5E14 /* ContentView.swift */; };
 		A413B253283080E6006A5E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A413B229283080E6006A5E14 /* Assets.xcassets */; };
 		A413B254283080E6006A5E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A413B229283080E6006A5E14 /* Assets.xcassets */; };
 		A4BBE85228319B2300607240 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = A4BBE85128319B2300607240 /* MapboxMaps */; };
@@ -41,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		A413B227283080E4006A5E14 /* ComposableMapboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableMapboxApp.swift; sourceTree = "<group>"; };
-		A413B228283080E4006A5E14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A413B229283080E6006A5E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A413B22E283080E6006A5E14 /* ComposableMapbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComposableMapbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A413B234283080E6006A5E14 /* ComposableMapbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComposableMapbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				A413B227283080E4006A5E14 /* ComposableMapboxApp.swift */,
-				A413B228283080E4006A5E14 /* ContentView.swift */,
 				A413B229283080E6006A5E14 /* Assets.xcassets */,
 				A4BBE85328319B6300607240 /* MapboxMapView.swift */,
 			);
@@ -313,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A413B251283080E6006A5E14 /* ContentView.swift in Sources */,
 				A4BBE85428319B6400607240 /* MapboxMapView.swift in Sources */,
 				A413B24F283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */,
 			);
@@ -323,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A413B252283080E6006A5E14 /* ContentView.swift in Sources */,
 				A4BBE85528319B6400607240 /* MapboxMapView.swift in Sources */,
 				A413B250283080E6006A5E14 /* ComposableMapboxApp.swift in Sources */,
 			);
